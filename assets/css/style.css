@@ -23,7 +23,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: baseline;
   align-content: flex-start;
 }
 
@@ -35,8 +35,9 @@ body {
   position: relative;
   box-shadow: 4px 4px 2px #ddd;
   box-sizing: border-box;
-
-  width: 40em;
+  font-size: 1.5em;
+  line-height: 150%;
+  width: 30em;
 }
 
 #buy-now {
@@ -47,8 +48,10 @@ body {
   position: relative;
   box-shadow: 4px 4px 2px #ddd;
   box-sizing: border-box;
+  font-size: 1.5em;
+  line-height: 150%;
 
-  width: 40em;
+  width: 20em;
 }
 
 button {
@@ -142,10 +145,6 @@ footer > .page {
   padding-bottom: 24px;
 }
 
-@media screen and (max-width: 880px).page {
-  max-width: 700px;
-}
-
 .page {
   padding 0 16px;
   margin: auto;
@@ -160,4 +159,39 @@ page:after {
 #footer-logo {
   height: 32px;
   width: 120px;
+}
+
+header {
+  margin-top: 1em;
+}
+
+img.logo {
+  display: block;
+  margin: 0 auto;
+  border-radius: 0.25em;
+}
+
+h1.logo {
+  text-align: center;
+  color: #fff;
+}
+
+ul {
+  list-style: square;
+  padding: 0 0 0 1.25em;
+  margin: 1em 0 0;
+}
+
+p:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 880px) {
+
+  .page {
+    max-width: 700px;
+  }
+  img.logo {
+    width: 100%;
+  }
 }
