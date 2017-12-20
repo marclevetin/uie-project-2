@@ -37,7 +37,7 @@ body {
   box-sizing: border-box;
   font-size: 1.5em;
   line-height: 150%;
-  width: 50%;
+  width: 30em;
 }
 
 #buy-now {
@@ -51,7 +51,7 @@ body {
   font-size: 1.5em;
   line-height: 150%;
 
-  width: 30%;
+  width: 20em;
 }
 
 button {
